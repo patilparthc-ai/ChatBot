@@ -1,0 +1,757 @@
+text,intent
+who are you,bot_identity
+what is your name,bot_identity
+what are you,bot_identity
+tell me about yourself,bot_identity
+are you a robot,bot_identity
+are you human,bot_identity
+who made you,bot_identity
+who created you,bot_identity
+introduce yourself,bot_identity
+what can you do,bot_identity
+are you an ai,bot_identity
+what courses are available,courses
+which subjects do you offer,courses
+tell me about the syllabus,courses
+list the courses,courses
+what can i study here,courses
+show me the subjects,courses
+which courses do you have,courses
+what do you teach,courses
+tell me about your courses,courses
+are there any ai courses,courses
+bye,goodbye
+goodbye,goodbye
+see you later,goodbye
+talk to you soon,goodbye
+see you,goodbye
+bye bye,goodbye
+i have to go now,goodbye
+catch you later,goodbye
+have a nice day,goodbye
+good night,goodbye
+i am leaving,goodbye
+take care,goodbye
+see you tomorrow,goodbye
+gotta go,goodbye
+farewell,goodbye
+hi,greeting
+hello,greeting
+hey,greeting
+hello there,greeting
+good morning,greeting
+good evening,greeting
+hey there,greeting
+hi bot,greeting
+good afternoon,greeting
+howdy,greeting
+hiya,greeting
+greetings,greeting
+hello bot,greeting
+hey buddy,greeting
+hi there,greeting
+help,help
+i need help,help
+can you help me,help
+what can i ask you,help
+how do i use you,help
+give me some examples,help
+what topics do you know,help
+show me the menu,help
+what questions can i ask,help
+guide me,help
+how are you,how_are_you
+how are you doing,how_are_you
+how is it going,how_are_you
+whats up,how_are_you
+how do you do,how_are_you
+are you fine,how_are_you
+how are you today,how_are_you
+hows everything,how_are_you
+are you okay,how_are_you
+how have you been,how_are_you
+how does this chatbot work,project_info
+how were you built,project_info
+what algorithm do you use,project_info
+explain this project,project_info
+what dataset did you use,project_info
+how were you trained,project_info
+what is tf idf,project_info
+what is the accuracy of this chatbot,project_info
+which model do you use,project_info
+what is an intent,project_info
+thank you,thanks
+thanks a lot,thanks
+that was helpful,thanks
+thanks,thanks
+many thanks,thanks
+thank you so much,thanks
+great thanks,thanks
+i appreciate it,thanks
+that helps thanks,thanks
+thanks for the help,thanks
+awesome thanks,thanks
+nice answer,thanks
+cool thank you,thanks
+perfect thanks,thanks
+you are great,thanks
+what is artificial intelligence,ai_info
+explain artificial intelligence,ai_info
+tell me about artificial intelligence,ai_info
+define artificial intelligence,ai_info
+artificial intelligence meaning,ai_info
+can you explain artificial intelligence,ai_info
+what is ai,ai_info
+explain ai,ai_info
+tell me about ai,ai_info
+define ai,ai_info
+ai meaning,ai_info
+can you explain ai,ai_info
+what is difference between ai and ml,ai_info
+explain difference between ai and ml,ai_info
+tell me about difference between ai and ml,ai_info
+define difference between ai and ml,ai_info
+difference between ai and ml meaning,ai_info
+can you explain difference between ai and ml,ai_info
+what is ai vs machine learning vs deep learning,ai_info
+explain ai vs machine learning vs deep learning,ai_info
+tell me about ai vs machine learning vs deep learning,ai_info
+define ai vs machine learning vs deep learning,ai_info
+ai vs machine learning vs deep learning meaning,ai_info
+can you explain ai vs machine learning vs deep learning,ai_info
+what is machine learning,ml_info
+explain machine learning,ml_info
+tell me about machine learning,ml_info
+define machine learning,ml_info
+machine learning meaning,ml_info
+can you explain machine learning,ml_info
+what is ml,ml_info
+explain ml,ml_info
+tell me about ml,ml_info
+define ml,ml_info
+ml meaning,ml_info
+can you explain ml,ml_info
+what is machine learning in simple words,ml_info
+explain machine learning in simple words,ml_info
+tell me about machine learning in simple words,ml_info
+define machine learning in simple words,ml_info
+machine learning in simple words meaning,ml_info
+can you explain machine learning in simple words,ml_info
+what is how machines learn,ml_info
+explain how machines learn,ml_info
+tell me about how machines learn,ml_info
+define how machines learn,ml_info
+how machines learn meaning,ml_info
+can you explain how machines learn,ml_info
+what is deep learning,dl_info
+explain deep learning,dl_info
+tell me about deep learning,dl_info
+define deep learning,dl_info
+deep learning meaning,dl_info
+can you explain deep learning,dl_info
+what is neural network,dl_info
+explain neural network,dl_info
+tell me about neural network,dl_info
+define neural network,dl_info
+neural network meaning,dl_info
+can you explain neural network,dl_info
+what is neural networks,dl_info
+explain neural networks,dl_info
+tell me about neural networks,dl_info
+define neural networks,dl_info
+neural networks meaning,dl_info
+can you explain neural networks,dl_info
+what is cnn,dl_info
+explain cnn,dl_info
+tell me about cnn,dl_info
+define cnn,dl_info
+cnn meaning,dl_info
+can you explain cnn,dl_info
+what is artificial neuron,dl_info
+explain artificial neuron,dl_info
+tell me about artificial neuron,dl_info
+define artificial neuron,dl_info
+artificial neuron meaning,dl_info
+can you explain artificial neuron,dl_info
+what is layers in a neural network,dl_info
+explain layers in a neural network,dl_info
+tell me about layers in a neural network,dl_info
+define layers in a neural network,dl_info
+layers in a neural network meaning,dl_info
+can you explain layers in a neural network,dl_info
+what is supervised learning,supervised
+explain supervised learning,supervised
+tell me about supervised learning,supervised
+define supervised learning,supervised
+supervised learning meaning,supervised
+can you explain supervised learning,supervised
+what is classification,supervised
+explain classification,supervised
+tell me about classification,supervised
+define classification,supervised
+classification meaning,supervised
+can you explain classification,supervised
+what is regression,supervised
+explain regression,supervised
+tell me about regression,supervised
+define regression,supervised
+regression meaning,supervised
+can you explain regression,supervised
+what is linear regression,supervised
+explain linear regression,supervised
+tell me about linear regression,supervised
+define linear regression,supervised
+linear regression meaning,supervised
+can you explain linear regression,supervised
+what is multiple linear regression,supervised
+explain multiple linear regression,supervised
+tell me about multiple linear regression,supervised
+define multiple linear regression,supervised
+multiple linear regression meaning,supervised
+can you explain multiple linear regression,supervised
+what is logistic regression,supervised
+explain logistic regression,supervised
+tell me about logistic regression,supervised
+define logistic regression,supervised
+logistic regression meaning,supervised
+can you explain logistic regression,supervised
+what is knn,supervised
+explain knn,supervised
+tell me about knn,supervised
+define knn,supervised
+knn meaning,supervised
+can you explain knn,supervised
+what is k nearest neighbors,supervised
+explain k nearest neighbors,supervised
+tell me about k nearest neighbors,supervised
+define k nearest neighbors,supervised
+k nearest neighbors meaning,supervised
+can you explain k nearest neighbors,supervised
+what is decision tree,supervised
+explain decision tree,supervised
+tell me about decision tree,supervised
+define decision tree,supervised
+decision tree meaning,supervised
+can you explain decision tree,supervised
+what is random forest,supervised
+explain random forest,supervised
+tell me about random forest,supervised
+define random forest,supervised
+random forest meaning,supervised
+can you explain random forest,supervised
+what is unsupervised learning,unsupervised
+explain unsupervised learning,unsupervised
+tell me about unsupervised learning,unsupervised
+define unsupervised learning,unsupervised
+unsupervised learning meaning,unsupervised
+can you explain unsupervised learning,unsupervised
+what is clustering,unsupervised
+explain clustering,unsupervised
+tell me about clustering,unsupervised
+define clustering,unsupervised
+clustering meaning,unsupervised
+can you explain clustering,unsupervised
+what is k means,unsupervised
+explain k means,unsupervised
+tell me about k means,unsupervised
+define k means,unsupervised
+k means meaning,unsupervised
+can you explain k means,unsupervised
+what is kmeans clustering,unsupervised
+explain kmeans clustering,unsupervised
+tell me about kmeans clustering,unsupervised
+define kmeans clustering,unsupervised
+kmeans clustering meaning,unsupervised
+can you explain kmeans clustering,unsupervised
+what is hierarchical clustering,unsupervised
+explain hierarchical clustering,unsupervised
+tell me about hierarchical clustering,unsupervised
+define hierarchical clustering,unsupervised
+hierarchical clustering meaning,unsupervised
+can you explain hierarchical clustering,unsupervised
+what is pca,unsupervised
+explain pca,unsupervised
+tell me about pca,unsupervised
+define pca,unsupervised
+pca meaning,unsupervised
+can you explain pca,unsupervised
+what is dimensionality reduction,unsupervised
+explain dimensionality reduction,unsupervised
+tell me about dimensionality reduction,unsupervised
+define dimensionality reduction,unsupervised
+dimensionality reduction meaning,unsupervised
+can you explain dimensionality reduction,unsupervised
+what is anomaly detection,unsupervised
+explain anomaly detection,unsupervised
+tell me about anomaly detection,unsupervised
+define anomaly detection,unsupervised
+anomaly detection meaning,unsupervised
+can you explain anomaly detection,unsupervised
+what is reinforcement learning,unsupervised
+explain reinforcement learning,unsupervised
+tell me about reinforcement learning,unsupervised
+define reinforcement learning,unsupervised
+reinforcement learning meaning,unsupervised
+can you explain reinforcement learning,unsupervised
+what is machine learning workflow,workflow
+explain machine learning workflow,workflow
+tell me about machine learning workflow,workflow
+define machine learning workflow,workflow
+machine learning workflow meaning,workflow
+can you explain machine learning workflow,workflow
+what is ml pipeline,workflow
+explain ml pipeline,workflow
+tell me about ml pipeline,workflow
+define ml pipeline,workflow
+ml pipeline meaning,workflow
+can you explain ml pipeline,workflow
+what is model training,workflow
+explain model training,workflow
+tell me about model training,workflow
+define model training,workflow
+model training meaning,workflow
+can you explain model training,workflow
+what is data preprocessing,workflow
+explain data preprocessing,workflow
+tell me about data preprocessing,workflow
+define data preprocessing,workflow
+data preprocessing meaning,workflow
+can you explain data preprocessing,workflow
+what is model evaluation,workflow
+explain model evaluation,workflow
+tell me about model evaluation,workflow
+define model evaluation,workflow
+model evaluation meaning,workflow
+can you explain model evaluation,workflow
+what is model deployment,workflow
+explain model deployment,workflow
+tell me about model deployment,workflow
+define model deployment,workflow
+model deployment meaning,workflow
+can you explain model deployment,workflow
+what is steps of a machine learning project,workflow
+explain steps of a machine learning project,workflow
+tell me about steps of a machine learning project,workflow
+define steps of a machine learning project,workflow
+steps of a machine learning project meaning,workflow
+can you explain steps of a machine learning project,workflow
+what is data collection,workflow
+explain data collection,workflow
+tell me about data collection,workflow
+define data collection,workflow
+data collection meaning,workflow
+can you explain data collection,workflow
+what is accuracy,metrics
+explain accuracy,metrics
+tell me about accuracy,metrics
+define accuracy,metrics
+accuracy meaning,metrics
+can you explain accuracy,metrics
+what is precision,metrics
+explain precision,metrics
+tell me about precision,metrics
+define precision,metrics
+precision meaning,metrics
+can you explain precision,metrics
+what is recall,metrics
+explain recall,metrics
+tell me about recall,metrics
+define recall,metrics
+recall meaning,metrics
+can you explain recall,metrics
+what is f1 score,metrics
+explain f1 score,metrics
+tell me about f1 score,metrics
+define f1 score,metrics
+f1 score meaning,metrics
+can you explain f1 score,metrics
+what is confusion matrix,metrics
+explain confusion matrix,metrics
+tell me about confusion matrix,metrics
+define confusion matrix,metrics
+confusion matrix meaning,metrics
+can you explain confusion matrix,metrics
+what is cross validation,metrics
+explain cross validation,metrics
+tell me about cross validation,metrics
+define cross validation,metrics
+cross validation meaning,metrics
+can you explain cross validation,metrics
+what is evaluation metrics,metrics
+explain evaluation metrics,metrics
+tell me about evaluation metrics,metrics
+define evaluation metrics,metrics
+evaluation metrics meaning,metrics
+can you explain evaluation metrics,metrics
+what is precision and recall,metrics
+explain precision and recall,metrics
+tell me about precision and recall,metrics
+define precision and recall,metrics
+precision and recall meaning,metrics
+can you explain precision and recall,metrics
+what is dataset,data_prep
+explain dataset,data_prep
+tell me about dataset,data_prep
+define dataset,data_prep
+dataset meaning,data_prep
+can you explain dataset,data_prep
+what is data cleaning,data_prep
+explain data cleaning,data_prep
+tell me about data cleaning,data_prep
+define data cleaning,data_prep
+data cleaning meaning,data_prep
+can you explain data cleaning,data_prep
+what is missing values,data_prep
+explain missing values,data_prep
+tell me about missing values,data_prep
+define missing values,data_prep
+missing values meaning,data_prep
+can you explain missing values,data_prep
+what is feature scaling,data_prep
+explain feature scaling,data_prep
+tell me about feature scaling,data_prep
+define feature scaling,data_prep
+feature scaling meaning,data_prep
+can you explain feature scaling,data_prep
+what is normalization,data_prep
+explain normalization,data_prep
+tell me about normalization,data_prep
+define normalization,data_prep
+normalization meaning,data_prep
+can you explain normalization,data_prep
+what is standardization,data_prep
+explain standardization,data_prep
+tell me about standardization,data_prep
+define standardization,data_prep
+standardization meaning,data_prep
+can you explain standardization,data_prep
+what is feature selection,data_prep
+explain feature selection,data_prep
+tell me about feature selection,data_prep
+define feature selection,data_prep
+feature selection meaning,data_prep
+can you explain feature selection,data_prep
+what is train test split,data_prep
+explain train test split,data_prep
+tell me about train test split,data_prep
+define train test split,data_prep
+train test split meaning,data_prep
+can you explain train test split,data_prep
+what is eda,data_prep
+explain eda,data_prep
+tell me about eda,data_prep
+define eda,data_prep
+eda meaning,data_prep
+can you explain eda,data_prep
+what is exploratory data analysis,data_prep
+explain exploratory data analysis,data_prep
+tell me about exploratory data analysis,data_prep
+define exploratory data analysis,data_prep
+exploratory data analysis meaning,data_prep
+can you explain exploratory data analysis,data_prep
+what is heat map,data_prep
+explain heat map,data_prep
+tell me about heat map,data_prep
+define heat map,data_prep
+heat map meaning,data_prep
+can you explain heat map,data_prep
+what is histogram,data_prep
+explain histogram,data_prep
+tell me about histogram,data_prep
+define histogram,data_prep
+histogram meaning,data_prep
+can you explain histogram,data_prep
+what is scatter plot,data_prep
+explain scatter plot,data_prep
+tell me about scatter plot,data_prep
+define scatter plot,data_prep
+scatter plot meaning,data_prep
+can you explain scatter plot,data_prep
+what is correlation,data_prep
+explain correlation,data_prep
+tell me about correlation,data_prep
+define correlation,data_prep
+correlation meaning,data_prep
+can you explain correlation,data_prep
+what is numpy,python_libs
+explain numpy,python_libs
+tell me about numpy,python_libs
+define numpy,python_libs
+numpy meaning,python_libs
+can you explain numpy,python_libs
+what is pandas,python_libs
+explain pandas,python_libs
+tell me about pandas,python_libs
+define pandas,python_libs
+pandas meaning,python_libs
+can you explain pandas,python_libs
+what is matplotlib,python_libs
+explain matplotlib,python_libs
+tell me about matplotlib,python_libs
+define matplotlib,python_libs
+matplotlib meaning,python_libs
+can you explain matplotlib,python_libs
+what is scikit learn,python_libs
+explain scikit learn,python_libs
+tell me about scikit learn,python_libs
+define scikit learn,python_libs
+scikit learn meaning,python_libs
+can you explain scikit learn,python_libs
+what is sklearn,python_libs
+explain sklearn,python_libs
+tell me about sklearn,python_libs
+define sklearn,python_libs
+sklearn meaning,python_libs
+can you explain sklearn,python_libs
+what is google colab,python_libs
+explain google colab,python_libs
+tell me about google colab,python_libs
+define google colab,python_libs
+google colab meaning,python_libs
+can you explain google colab,python_libs
+what is jupyter notebook,python_libs
+explain jupyter notebook,python_libs
+tell me about jupyter notebook,python_libs
+define jupyter notebook,python_libs
+jupyter notebook meaning,python_libs
+can you explain jupyter notebook,python_libs
+what is anaconda,python_libs
+explain anaconda,python_libs
+tell me about anaconda,python_libs
+define anaconda,python_libs
+anaconda meaning,python_libs
+can you explain anaconda,python_libs
+what is python libraries for ml,python_libs
+explain python libraries for ml,python_libs
+tell me about python libraries for ml,python_libs
+define python libraries for ml,python_libs
+python libraries for ml meaning,python_libs
+can you explain python libraries for ml,python_libs
+what is ml in healthcare,applications
+explain ml in healthcare,applications
+tell me about ml in healthcare,applications
+define ml in healthcare,applications
+ml in healthcare meaning,applications
+can you explain ml in healthcare,applications
+what is ml in iot,applications
+explain ml in iot,applications
+tell me about ml in iot,applications
+define ml in iot,applications
+ml in iot meaning,applications
+can you explain ml in iot,applications
+what is ml in signal processing,applications
+explain ml in signal processing,applications
+tell me about ml in signal processing,applications
+define ml in signal processing,applications
+ml in signal processing meaning,applications
+can you explain ml in signal processing,applications
+what is ai in telecommunication,applications
+explain ai in telecommunication,applications
+tell me about ai in telecommunication,applications
+define ai in telecommunication,applications
+ai in telecommunication meaning,applications
+can you explain ai in telecommunication,applications
+what is ai in robotics,applications
+explain ai in robotics,applications
+tell me about ai in robotics,applications
+define ai in robotics,applications
+ai in robotics meaning,applications
+can you explain ai in robotics,applications
+what is ai in agriculture,applications
+explain ai in agriculture,applications
+tell me about ai in agriculture,applications
+define ai in agriculture,applications
+ai in agriculture meaning,applications
+can you explain ai in agriculture,applications
+what is ml in industrial automation,applications
+explain ml in industrial automation,applications
+tell me about ml in industrial automation,applications
+define ml in industrial automation,applications
+ml in industrial automation meaning,applications
+can you explain ml in industrial automation,applications
+what is applications of machine learning,applications
+explain applications of machine learning,applications
+tell me about applications of machine learning,applications
+define applications of machine learning,applications
+applications of machine learning meaning,applications
+can you explain applications of machine learning,applications
+what is ai in smart manufacturing,applications
+explain ai in smart manufacturing,applications
+tell me about ai in smart manufacturing,applications
+define ai in smart manufacturing,applications
+ai in smart manufacturing meaning,applications
+can you explain ai in smart manufacturing,applications
+what is ml in smart communication systems,applications
+explain ml in smart communication systems,applications
+tell me about ml in smart communication systems,applications
+define ml in smart communication systems,applications
+ml in smart communication systems meaning,applications
+can you explain ml in smart communication systems,applications
+what is generative ai,trends
+explain generative ai,trends
+tell me about generative ai,trends
+define generative ai,trends
+generative ai meaning,trends
+can you explain generative ai,trends
+what is edge ai,trends
+explain edge ai,trends
+tell me about edge ai,trends
+define edge ai,trends
+edge ai meaning,trends
+can you explain edge ai,trends
+what is tinyml,trends
+explain tinyml,trends
+tell me about tinyml,trends
+define tinyml,trends
+tinyml meaning,trends
+can you explain tinyml,trends
+what is aiot,trends
+explain aiot,trends
+tell me about aiot,trends
+define aiot,trends
+aiot meaning,trends
+can you explain aiot,trends
+what is explainable ai,trends
+explain explainable ai,trends
+tell me about explainable ai,trends
+define explainable ai,trends
+explainable ai meaning,trends
+can you explain explainable ai,trends
+what is xai,trends
+explain xai,trends
+tell me about xai,trends
+define xai,trends
+xai meaning,trends
+can you explain xai,trends
+what is ai in 5g,trends
+explain ai in 5g,trends
+tell me about ai in 5g,trends
+define ai in 5g,trends
+ai in 5g meaning,trends
+can you explain ai in 5g,trends
+what is ai in 6g,trends
+explain ai in 6g,trends
+tell me about ai in 6g,trends
+define ai in 6g,trends
+ai in 6g meaning,trends
+can you explain ai in 6g,trends
+what is ai assistants,trends
+explain ai assistants,trends
+tell me about ai assistants,trends
+define ai assistants,trends
+ai assistants meaning,trends
+can you explain ai assistants,trends
+what is future of ai,trends
+explain future of ai,trends
+tell me about future of ai,trends
+define future of ai,trends
+future of ai meaning,trends
+can you explain future of ai,trends
+what is an api,api_info
+explain an api,api_info
+tell me about an api,api_info
+define an api,api_info
+an api meaning,api_info
+can you explain an api,api_info
+what is an ai api,api_info
+explain an ai api,api_info
+tell me about an ai api,api_info
+define an ai api,api_info
+an ai api meaning,api_info
+can you explain an ai api,api_info
+what is cloud ai,api_info
+explain cloud ai,api_info
+tell me about cloud ai,api_info
+define cloud ai,api_info
+cloud ai meaning,api_info
+can you explain cloud ai,api_info
+what is prompt engineering,api_info
+explain prompt engineering,api_info
+tell me about prompt engineering,api_info
+define prompt engineering,api_info
+prompt engineering meaning,api_info
+can you explain prompt engineering,api_info
+what is a prompt,api_info
+explain a prompt,api_info
+tell me about a prompt,api_info
+define a prompt,api_info
+a prompt meaning,api_info
+can you explain a prompt,api_info
+what is gemini,api_info
+explain gemini,api_info
+tell me about gemini,api_info
+define gemini,api_info
+gemini meaning,api_info
+can you explain gemini,api_info
+what is a large language model,api_info
+explain a large language model,api_info
+tell me about a large language model,api_info
+define a large language model,api_info
+a large language model meaning,api_info
+can you explain a large language model,api_info
+what is llm,api_info
+explain llm,api_info
+tell me about llm,api_info
+define llm,api_info
+llm meaning,api_info
+can you explain llm,api_info
+what is chatgpt,api_info
+explain chatgpt,api_info
+tell me about chatgpt,api_info
+define chatgpt,api_info
+chatgpt meaning,api_info
+can you explain chatgpt,api_info
+what is generative ai tools,api_info
+explain generative ai tools,api_info
+tell me about generative ai tools,api_info
+define generative ai tools,api_info
+generative ai tools meaning,api_info
+can you explain generative ai tools,api_info
+what is responsible ai,ethics
+explain responsible ai,ethics
+tell me about responsible ai,ethics
+define responsible ai,ethics
+responsible ai meaning,ethics
+can you explain responsible ai,ethics
+what is ai ethics,ethics
+explain ai ethics,ethics
+tell me about ai ethics,ethics
+define ai ethics,ethics
+ai ethics meaning,ethics
+can you explain ai ethics,ethics
+what is bias in ai,ethics
+explain bias in ai,ethics
+tell me about bias in ai,ethics
+define bias in ai,ethics
+bias in ai meaning,ethics
+can you explain bias in ai,ethics
+what is dataset bias,ethics
+explain dataset bias,ethics
+tell me about dataset bias,ethics
+define dataset bias,ethics
+dataset bias meaning,ethics
+can you explain dataset bias,ethics
+what is fairness in ai,ethics
+explain fairness in ai,ethics
+tell me about fairness in ai,ethics
+define fairness in ai,ethics
+fairness in ai meaning,ethics
+can you explain fairness in ai,ethics
+what is ai safety,ethics
+explain ai safety,ethics
+tell me about ai safety,ethics
+define ai safety,ethics
+ai safety meaning,ethics
+can you explain ai safety,ethics
+what is risks of ai,ethics
+explain risks of ai,ethics
+tell me about risks of ai,ethics
+define risks of ai,ethics
+risks of ai meaning,ethics
+can you explain risks of ai,ethics
+what is ethical issues in ai,ethics
+explain ethical issues in ai,ethics
+tell me about ethical issues in ai,ethics
+define ethical issues in ai,ethics
+ethical issues in ai meaning,ethics
+can you explain ethical issues in ai,ethics

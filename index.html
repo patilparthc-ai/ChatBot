@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot using ML APIs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-wrapper">
+    <!-- Header -->
+    <header class="chat-header">
+        <div class="header-info">
+            <h1>🤖 AI & ML Chatbot</h1>
+            <p>Logistic Regression + Generative AI API</p>
+        </div>
+        <div id="api-badge" class="status-badge">API Mode: Checking...</div>
+    </header>
+
+    <!-- Clear Instruction Banner for Exiting -->
+    <div class="instruction-bar">
+        💡 <strong>Instructions:</strong> Ask about AI, ML, Python, or type <code>help</code>. 
+        To exit the chat, type <strong><code>quit</code></strong> or <strong><code>exit</code></strong> (or click <em>Exit Chat</em>).
+    </div>
+
+    <!-- Quick Topic Pills -->
+    <div class="quick-topics">
+        <span>Try:</span>
+        <button onclick="sendQuick('help')">help</button>
+        <button onclick="sendQuick('What is machine learning?')">What is ML?</button>
+        <button onclick="sendQuick('Explain KNN')">Explain KNN</button>
+        <button onclick="sendQuick('What is precision?')">Metrics</button>
+        <button onclick="sendQuick('How does this chatbot work?')">Project Info</button>
+    </div>
+
+    <!-- Chat Messages Container -->
+    <div id="chat-box" class="chat-box">
+        <div class="message bot-message">
+            <div class="bubble">
+                Hello! I'm an AI chatbot built with Machine Learning. Ask me about AI, ML, Python or type <b>'help'</b>.<br><br>
+                <em>(Note: Type <b>'quit'</b> or <b>'exit'</b> anytime to end the conversation.)</em>
+            </div>
+            <div class="meta">System Ready</div>
+        </div>
+    </div>
+
+    <!-- Input Form -->
+    <div class="chat-input-area">
+        <form id="chat-form" onsubmit="handleSend(event)">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Type your message here... (or type 'quit' / 'exit' to leave)" 
+                autocomplete="off" 
+                required
+            >
+            <button type="submit" id="send-btn" class="send-btn">Send</button>
+            <button type="button" id="exit-btn" class="exit-btn" onclick="sendQuick('quit')" title="Type 'quit' to exit">Exit Chat</button>
+        </form>
+        <button id="restart-btn" class="restart-btn" onclick="restartChat()" style="display: none;">
+            🔄 Start New Chat Session
+        </button>
+    </div>
+</div>
+
+<script>
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+    const exitBtn = document.getElementById('exit-btn');
+    const restartBtn = document.getElementById('restart-btn');
+    const apiBadge = document.getElementById('api-badge');
+
+    // Check API status on load
+    fetch('/status')
+        .then(res => res.json())
+        .then(data => {
+            apiBadge.textContent = `API Mode: ${data.api_mode}`;
+            apiBadge.classList.add(data.api_mode === 'ON' ? 'status-on' : 'status-off');
+        })
+        .catch(() => {
+            apiBadge.textContent = 'API Mode: Offline';
+        });
+
+    function appendMessage(sender, text, metaText = '') {
+        const msgDiv = document.createElement('div');
+        msgDiv.className = `message ${sender}-message`;
+
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        bubble.textContent = text;
+        msgDiv.appendChild(bubble);
+
+        if (metaText) {
+            const meta = document.createElement('div');
+            meta.className = 'meta';
+            meta.textContent = metaText;
+            msgDiv.appendChild(meta);
+        }
+
+        chatBox.appendChild(msgDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    async function sendMessage(text) {
+        if (!text.trim() || userInput.disabled) return;
+
+        appendMessage('user', text);
+        userInput.value = '';
+
+        try {
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text })
+            });
+            const data = await response.json();
+
+            if (data.ended) {
+                appendMessage('bot', data.reply, 'Session Ended');
+                endChatSession();
+            } else {
+                const metaInfo = `Source: ${data.source} | Confidence: ${data.confidence.toFixed(2)}`;
+                appendMessage('bot', data.reply, metaInfo);
+            }
+        } catch (err) {
+            appendMessage('bot', 'Error connecting to Python backend. Make sure server.py is running.', 'Error');
+        }
+    }
+
+    function handleSend(e) {
+        e.preventDefault();
+        sendMessage(userInput.value);
+    }
+
+    function sendQuick(text) {
+        if (userInput.disabled) return;
+        sendMessage(text);
+    }
+
+    function endChatSession() {
+        userInput.disabled = true;
+        userInput.placeholder = "Chat ended. Click 'Start New Chat Session' below to chat again.";
+        sendBtn.style.display = 'none';
+        exitBtn.style.display = 'none';
+        restartBtn.style.display = 'block';
+
+        const notice = document.createElement('div');
+        notice.className = 'exit-notice';
+        notice.innerHTML = '🔒 You have exited the chat. Type <b>quit</b> or <b>exit</b> was triggered.';
+        chatBox.appendChild(notice);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function restartChat() {
+        userInput.disabled = false;
+        userInput.placeholder = "Type your message here... (or type 'quit' / 'exit' to leave)";
+        sendBtn.style.display = 'inline-block';
+        exitBtn.style.display = 'inline-block';
+        restartBtn.style.display = 'none';
+        appendMessage('bot', "Chat restarted! Ask me anything or type 'quit' to exit.", "System Ready");
+        userInput.focus();
+    }
+</script>
+
+</body>
+</html>
